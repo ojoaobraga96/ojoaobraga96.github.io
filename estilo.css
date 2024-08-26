@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background: white;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #697d68;
+    height: 80px;
+    text-align: center;
+
+}
+
+header h1 {
+    font-size: 60px;
+    color: white;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: normal;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+
+}
+
+.box-img {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    /* border: 1px solid blue; */
+
+
+}
+
+.box-txt {
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+    /* border: 1px solid green; */
+
+
+}
+
+.box-txt span {
+    color: grey;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+.box-txt h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 120pix;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 30pix;
+    color: blueviolet;
+    line-height: 70px;
+
+
+}
+
+.box-txt p {
+    color: green;
+    margin-bottom: 30px;
+}
+
+.btn-hero {
+    background: pink;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 30px;
+    transition: 0.5s all;
+    font-weight: bold;
+}
+
+.btn-hero:hover {
+    background: rgb(214, 31, 31);
+    font-size: 20px;
+
+}
+
+.box-item {
+    width: 30%;
+    padding: 30px 20px;
+    background: rgb(212, 127, 141);
+    height: 380px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: 1px solid red;
+    margin-left: 10%;
+    flex-flow: row wrap;
+
+}
+
+.m-top {
+    margin-top: 20px;
+
+}
+
+footer {
+    background: green;
+    height: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.whats {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    header h1 {
+        font-size: 45px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .box-txt {
+        flex-flow: column wrap;
+        width: 100%;
+        padding: 40% 20%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box-txt h2 {
+        font-size: 60px;
+    }
+
+    .box-txt p {
+        text-align: center;
+    }
+
+    .box-img {
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    .box-item {
+        width: 90%;
+
+    }
+
+    footer {
+        font-size: 18px;
+
+    }
+
+}
