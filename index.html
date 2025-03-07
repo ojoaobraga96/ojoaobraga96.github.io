@@ -1,86 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Simples</title>
-    <link rel="stylesheet" href="estilo.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Especial</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1> Emagreça Com Saúde</h1>
-    </header>
+  <div id="login">
+    <h2>Digite a senha</h2>
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="verificarSenha()">Entrar</button>
+  </div>
 
-    <section class="hero">
-        <div class="box-img">
-            <img id="comida" src="img/comida2.webp">
+  <div id="conteudo" style="display: none;">
+    <h1>Bem-vinda ao nosso site Bruna Carla meu amor, amor!</h1>
+    <p>Esse site é todo seu. Aqui estão algumas surpresas para você.</p>
+  </div>
 
-        </div>
-        <div class="box-txt">
-            <span>Dietas para vida</span>
-            <h2>Saúde PLENA,<br> VIDA SERENA</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat repellat aspernatur quam
-                nesciunt, ipsam veniam nemo nam nihil assumenda dicta! Illum, quas esse voluptatibus neque iste natus
-                perferendis veritatis?</p>
-            <a href="#" class="btn-hero">Marcar consulta</a>
-
-        </div>
-    </section>
-
-    <section class="especialidades">
-
-        <div class="box-item">
-            <h3>Especialidade 1</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quod dicta necessitatibus quisquam
-                aspernatur. Deserunt fugiat, modi quasi suscipit delectus impedit id quam deleniti quidem quos,
-                consequuntur dolorum quibusdam! Veritatis.</p>
-
-        </div>
-        <div class="box-item">
-            <h3>especialidades 2</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam labore ratione ipsum nam eos
-                ducimus,
-                voluptatibus recusandae similique eveniet explicabo expedita dignissimos amet porro aperiam cumque
-                laboriosam aut consectetur veniam!</p>
-        </div>
-
-        <div class="box-item">
-            <h3>especialidades 3</h3>
-            p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti repudiandae temporibus
-            possimus eum nostrum laboriosam qui enim nulla laudantium dignissimos voluptate optio sunt, aut
-            repellendus
-            sed dicta mollitia alias.
-        </div>
-        <a href="#" class="m-top btn-hero">Marcar consulta</a>
-    </section>
-
-    <footer>
-        <p>Clinica da mulher etc etc todos direitos reservados</p>
-    </footer>
-
-    <div class="whats">
-        <a target="_blank" href="www.facebook.com">
-
-            <img width="50" src="img/whatsapp.png">
-        </a>
-    </div>
-
-    <script>
-        // PEGAR O ELEMENTO
-        const comida = document.getElementById('comida');
-        // EVENTO QUANDO O MOUSE ESTIVER EM CIMA DA IMAGEM
-        comida.addEventListener('mouseover', function () {
-            comida.src = "img/comida2.png";
-        });
-        // EVENTO QUANDO O MOUSE ESTIVER EM CIMA DA IMAGEM
-        comida.addEventListener('mouseout', function () {
-            comida.src = "img/comida2.webp";
-        });
-
-    </script>
+  <script src="script.js"></script>
 </body>
-
 </html>

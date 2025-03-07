@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Especial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login">
+    <h2>Digite a senha</h2>
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="verificarSenha()">Entrar</button>
+  </div>
+
+  <div id="conteudo" style="display: none;">
+    <h1>Bem-vinda ao nosso site, amor!</h1>
+    <p>Esse site é todo seu. Aqui estão algumas surpresas para você.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Cor de fundo opcional */
+}
+
+#heart {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin-left: -150px; /* Ajuste para centralizar */
+    margin-top: -150px; /* Ajuste para centralizar */
+    animation: pulse 2s infinite; /* Adiciona animação de "bater" no coração */
+}
+
+#heart::before,
+#heart::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#heart::before {
+    left: 150px;
+}
+
+#heart::after {
+    top: -150px;
+    left: 0;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* O coração aumenta de tamanho para criar um efeito de batida */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
