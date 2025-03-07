@@ -1,6 +1,6 @@
 function verificarSenha() {
   var senha = document.getElementById("senha").value;
-  var senhaCorreta = "namorada123"; // Defina aqui a senha que você quer usar
+  var senhaCorreta = "namorada"; // Defina aqui a senha que você quer usar
 
   if (senha === senhaCorreta) {
     document.getElementById("login").style.display = "none";
