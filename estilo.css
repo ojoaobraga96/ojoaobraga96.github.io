@@ -6,6 +6,13 @@
 }
 
 body {
+    background-image: url('https://1024terabox.com/s/1TfZ88CePX-_-ZCWACQlA3g');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+
+body {
     padding: 0%;
     margin: 0%;
     background: white;
