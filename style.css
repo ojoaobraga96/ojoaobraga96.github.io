@@ -12,6 +12,9 @@
     <input type="password" id="senha" placeholder="Senha">
     <button onclick="verificarSenha()">Entrar</button>
   </div>
+  
+  <p> (Dica: Nome da felina mais bela do Brasil!) 
+    </p>
 
   <div id="conteudo" style="display: none;">
     <h1>Bem-vinda ao nosso site, amor!</h1>
